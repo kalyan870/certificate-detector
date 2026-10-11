@@ -17,3 +17,9 @@ flowchart LR
 ```
 
 This is an intended workflow diagram, not a description of code already implemented here. Add the application, dependencies, sample inputs, privacy guidance, and reproducible run steps before presenting detection results as available.
+
+
+## Live concept preview
+
+[Open the interactive prototype](https://kalyan870.github.io/certificate-detector/). This is a static concept preview using sample data, not a production backend. See the limitation notice in the app.
+
