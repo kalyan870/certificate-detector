@@ -1,25 +1,25 @@
-# Certificate Detector
+# Certificate Review — concept preview
 
-<p align="center"><strong>A project space for building tools that inspect certificate documents and identify useful information.</strong></p>
+This repository contains a static HTML/CSS/JavaScript concept for a certificate-review workflow. The page shows a sample interaction only; it does **not** upload or process documents, run OCR or a model, extract certificate fields, or store records.
 
-## Project status
+## Preview
 
-This GitHub repository currently contains its license and ignore rules, but no application source, model, sample data, or run instructions. It is not a runnable certificate-detection app yet.
+The GitHub Pages site is a static concept preview: <https://kalyan870.github.io/certificate-detector/>. Its button displays illustrative copy and does not analyze a certificate. Do not enter real or sensitive documents into this concept page.
 
-## Suggested implementation flow
+## Run locally
 
-```mermaid
-flowchart LR
-  D[Certificate image or PDF] --> P[Preprocess and validate]
-  P --> O[OCR or document model]
-  O --> E[Extract certificate fields]
-  E --> R[Review extracted result]
+Open `index.html` in a browser, or serve this folder with Python:
+
+```powershell
+python -m http.server 8000
 ```
 
-This is an intended workflow diagram, not a description of code already implemented here. Add the application, dependencies, sample inputs, privacy guidance, and reproducible run steps before presenting detection results as available.
+Then visit <http://localhost:8000>. No package installation or build step is required.
 
+## Current scope
 
-## Live concept preview
+- Implemented: responsive static layout and an illustrative button interaction.
+- Not implemented: file upload, OCR/document AI, field extraction, authentication, backend/API, database, and review queue.
+- The workflow diagram and labels describe a possible future direction, not current functionality.
 
-[Open the interactive prototype](https://kalyan870.github.io/certificate-detector/). This is a static concept preview using sample data, not a production backend. See the limitation notice in the app.
-
+There is no automated test suite or production build command in this repository. Before adding document processing, define data-retention and privacy requirements and use synthetic/sample certificates for development.
