@@ -23,3 +23,9 @@ This is an intended workflow diagram, not a description of code already implemen
 
 [Open the interactive prototype](https://kalyan870.github.io/certificate-detector/). This is a static concept preview using sample data, not a production backend. See the limitation notice in the app.
 
+## Architecture
+
+
+![certificate-detector architecture map](docs/images/certificate-detector-architecture.png)
+
+[Architecture notes](docs/architecture.md) · [Editable SVG](docs/images/certificate-detector-architecture.svg)
